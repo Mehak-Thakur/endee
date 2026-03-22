@@ -9,7 +9,7 @@ db = EndeeDB()
 
 st.set_page_config(page_title="AI Resume Matcher", layout="centered")
 
-st.title("💼 AI Resume Matcher")
+st.title("AI Resume Matcher")
 st.write("Match your resume with job description using AI & Vector Search")
 
 resume_file = st.file_uploader("Upload Resume (PDF)", type=["pdf"])
@@ -39,16 +39,16 @@ if st.button("Analyze"):
         suggestions = generate_suggestions(missing_skills)
 
         # OUTPUT
-        st.subheader("📊 Match Score")
+        st.subheader(" Match Score")
         st.success(f"{score}% match")
 
-        st.subheader("❌ Missing Skills")
+        st.subheader(" Missing Skills")
         if missing_skills:
             st.write(", ".join(missing_skills))
         else:
             st.write("No major missing skills detected")
 
-        st.subheader("💡 Suggestions")
+        st.subheader(" Suggestions")
         for s in suggestions:
             st.write("- " + s)
 
