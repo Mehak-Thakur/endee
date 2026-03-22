@@ -159,7 +159,7 @@ The system provides:
 ---
 
 
-## 🔥 Future Enhancements
+##  Future Enhancements
 
 * Advanced NLP-based skill extraction (spaCy)
 * Multiple resume ranking system
